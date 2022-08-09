@@ -60,3 +60,20 @@
 .nav__btn:last-child {
   animation-delay: 0.8s;
 }
+
+@keyframes BtnBeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.nav__btn :hover {
+  animation: BtnBeat 2s ease-in-out forwards;
+}
